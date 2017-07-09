@@ -5,11 +5,11 @@ function compute() {
   console.log(`compute`)
 
   // with process next tick every tick will first execute compute and http requests will never be answered as they are queued after next tick
-  // process.nextTick(compute)
+    // process.nextTick(compute)
   // set timeout 0 will put the compute function after the http request on next tick and request will be answered
-  // setTimeout(compute,0)
+    // setTimeout(compute,0)
   // set immediate will also compute after http request as it is queued after the http request and http will be answered.
-  setImmediate(compute)
+    // setImmediate(compute)
 }
 
 function listen(req, res) {
